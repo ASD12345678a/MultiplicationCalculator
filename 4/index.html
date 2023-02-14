@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+  <meta charset="UTF-8">
+  <head>
+    <title>Multiplication Calculator</title>
+    <head>
+   
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+      }
+
+      input[type="number"] {
+        padding: 10px;
+        font-size: 18px;
+        margin: 10px;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 18px;
+        margin-top: 20px;
+        background-color: lightblue;
+        border: none;
+        cursor: pointer;
+      }
+
+      h3 {
+        margin-top: 30px;
+      }
+
+      body{
+        background: rgb(255, 255, 255);
+      }
+
+      section{
+        padding: 10px 20px;
+        font-size: 18px;
+        margin-top: 20px;
+        background-color: lightblue;
+        border: none;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+      }
+
+      o{
+        padding: 10px 20px;
+        font-size: 18px;
+        margin-top: 20px;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -40px;
+      }
+    </style>
+  </head>
+  <section>
+    <main>
+      
+    <h2>Multiplication Calculator</h2>
+    <main>
+    
+    </section>
+    <main>
+      
+  <body>
+    <div class="container">
+      
+      <input type="number" id="num1" placeholder="Enter first number">
+      <input type="number" id="num2" placeholder="Enter second number">
+      <button id="calculate">Calculate</button>
+      <h3 id="result"></h3>
+    </div>
+
+    <script>
+      const num1 = document.getElementById("num1");
+      const num2 = document.getElementById("num2");
+      const calculateButton = document.getElementById("calculate");
+      const result = document.getElementById("result");
+
+      calculateButton.addEventListener("click", function() {
+        result.textContent = `Result: ${num1.value * num2.value}`;
+
+      });
+
+      
+    </script>
+      <script>
+        function displayTime() {
+          var currentTime = new Date();
+          document.getElementById("time").innerHTML = currentTime.toLocaleTimeString();
+        }
+        
+        setInterval(displayTime, 1000);
+      </script>
+  
+    </script>
+      <script>
+        function displayTime() {
+          var currentTime = new Date();
+          document.getElementById("time").innerHTML = currentTime.toLocaleTimeString();
+        }
+        
+        setInterval(displayTime, 1000);
+      </script>
+     <o>
+      <button onclick="like()">Like</button>
+  <span id="like-count">0</span> likes
+     </o>
+       <section>
+        <p>Copyright © 2023</p>
+  </head>
+  <head>
+    <title>My Website</title>
+    <script>
+      var likes = 0;
+      function like() {
+        likes++;
+        document.getElementById("like-count").innerHTML = likes;
+      }
+    </script>
+  </head>
+  </body>
+</html>
